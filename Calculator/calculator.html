@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Calculator.JS</title>
+    <link rel="stylesheet" href="calculator.css"></link>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <section id="Display-area">
+                <div class="currentInput"></div>
+                <div class="answerScreen" id="display"></div>
+            </section>
+            <section class="keypad-btns">
+                <button type="button" class="fun_btn" id="clear" value="" onclick="clearContent(this)">
+                    C
+                </button>
+                <button type="button" class="fun_btn" value="/" onclick="takeValue(this)">/</button>
+                <button type="button" class="fun_btn" value="*" onclick="takeValue(this)">*</button>
+                <button type="button" class="fun_btn" value="-" onclick="takeValue(this)">-</button>
+                <button type="button" class="num_btn" value="7" onclick="takeValue(this)">7</button>
+                <button type="button" class="num_btn" value="8" onclick="takeValue(this)">8</button>
+                <button type="button" class="num_btn" value="9" onclick="takeValue(this)">9</button>
+                <button type="button" class="fun_btn" value="+" onclick="takeValue(this)">+</button>
+                <button type="button" class="num_btn" value="4" onclick="takeValue(this)">4</button>
+                <button type="button" class="num_btn" value="5" onclick="takeValue(this)">5</button>
+                <button type="button" class="num_btn" value="6" onclick="takeValue(this)">6</button>
+                <button type="button" class="fun_btn" id="evaluate" value="" onclick="calculateResult()">
+                    <div id="equal">
+                        =
+                    </div>
+                </button>
+                <button type="button" class="num_btn" value="1" onclick="takeValue(this)">1</button>
+                <button type="button" class="num_btn" value="2" onclick="takeValue(this)">2</button>
+                <button type="button" class="num_btn" value="3" onclick="takeValue(this)">3</button>
+                <button type="button" class="num_btn" value="0" onclick="takeValue(this)">0</button>
+            </section>
+        </div> 
+    </nav>
+    <script src="calculator.js"></script>
+</body>
+</html>
